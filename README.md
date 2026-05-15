@@ -87,10 +87,11 @@ deep-past-akkadian-mt/
 ## 📄 Full Technical Report
 
 For a detailed breakdown of:
-- preprocessing pipeline
-- tokenizer debugging
-- TPU training
-- architectural analysis
+- The `<gap>` token silent-strip bug and fix
+- Why `transformers==4.38.2` was pinned (Group Beam Search offline compatibility)
+- chrF++ vs. BLEU diagnostic analysis
+- The case for ByT5 as the next architecture
+- Custom TPU training loop (replacing HuggingFace Trainer)
 - decoding strategies
 - experimental results
 
@@ -125,4 +126,8 @@ transformers==4.38.2
 
 <p align="center">
   Built with curiosity for ancient languages, low-resource NLP, and machine translation research.
+</p>
+
+<p align="center">
+  <i>Kaggle Deep Past Initiative Challenge — March 2026</i>
 </p>
